@@ -1,7 +1,7 @@
 import java.util.*;
 import Nitin_ds.*;
 
-public class Doublylinkedlist
+public class Testing
 {
 	public static void main(String[] args) 
 	{
@@ -13,6 +13,13 @@ public class Doublylinkedlist
 		}
 		n.removeFirst();
 		n.removeLast();
+
+		// CircularlyLinkedList<Integer> c = new CircularlyLinkedList<Integer>();
+		// //for(int i=0;i<3;i++)
+		// //{
+		// 	c.addFirst(7);
+		// 	c.addLast(8);
+		// //}
 
 		System.out.println(n.toString());
 	}
