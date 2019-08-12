@@ -49,9 +49,6 @@ public class CircularlyLinkedList<E>
   // instance variables of the CircularlyLinkedList
   /** The designated cursor of the list */
 
-  private Node<E> head = null;
-
-
   private Node<E> tail = null;                  // we store tail (but not head)
 
   /** Number of nodes in the list */
@@ -79,7 +76,7 @@ public class CircularlyLinkedList<E>
    */
   public E first() {     // returns (but does not remove) the first element
   if (isEmpty()) return null;
-    return head.getElement();        
+    return tail.getElement();        
   }
 
   /**
