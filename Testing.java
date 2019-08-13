@@ -5,14 +5,24 @@ public class Testing
 {
 	public static void main(String[] args) 
 	{
-		DoublyLinkedList<Integer> n = new DoublyLinkedList<Integer>();
-		for(int i=0;i<5;i++)
-		{
-			n.addFirst(i);
-			n.addLast(i*i);
+		SinglyLinkedList<Integer> s = new SinglyLinkedList<Integer>();
+		for(int i=1;i<6;i++) {
+			s.addLast(i);
 		}
-		n.removeFirst();
-		n.removeLast();
+		SinglyLinkedList<Integer> r = new SinglyLinkedList<Integer>();
+		r = s.reverse();
+		System.out.println(s.toString());
+		System.out.println("Reversed " + r.toString());
+
+		// DoublyLinkedList<Integer> n = new DoublyLinkedList<Integer>();
+		// for(int i=0;i<5;i++)
+		// {
+		// 	n.addFirst(i);
+		// 	n.addLast(i*i);
+		// }
+		// n.removeFirst();
+		// n.removeLast();
+		//System.out.println(n.toString());
 
 		// CircularlyLinkedList<Integer> c = new CircularlyLinkedList<Integer>();
 		// //for(int i=0;i<3;i++)
@@ -21,6 +31,6 @@ public class Testing
 		// 	c.addLast(8);
 		// //}
 
-		System.out.println(n.toString());
+		//System.out.println(c.toString());
 	}
 }

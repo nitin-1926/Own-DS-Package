@@ -1,3 +1,4 @@
+package Nitin_ds;
 public class SinglyLinkedList<E> 
 {
   //---------------- nested Node class ----------------
@@ -141,7 +142,22 @@ public class SinglyLinkedList<E>
     return answer;
   }
 
+  // public E merge() {
+    
+  // }
 
+  public SinglyLinkedList reverse() {
+    SinglyLinkedList<E> temp = new SinglyLinkedList<E>();
+     Node<E> head1 = null;
+     Node<E> ptr = head;
+     while(ptr!=null) {
+      E new_element = ptr.getElement();
+      temp.addFirst(new_element);
+      ptr = ptr.getNext();
+     }
+     return temp;
+
+  }
   /**
    * Produces a string representation of the contents of the list.
    * This exists for debugging purposes only.
