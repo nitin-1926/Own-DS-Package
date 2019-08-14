@@ -12,7 +12,6 @@ public class Testing
 		SinglyLinkedList<Integer> r = new SinglyLinkedList<Integer>();
 		r = s.reverse();
 
-		//SinglyLinkedList<Integer> c = new SinglyLinkedList<Integer>();
 		s.merge(r);
 
 		System.out.println(s.toString());
