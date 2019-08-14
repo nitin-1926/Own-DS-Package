@@ -1,4 +1,4 @@
-package Nitin_ds;
+package Nitin_ds; 
 public class SinglyLinkedList<E> 
 {
   //---------------- nested Node class ----------------
@@ -142,9 +142,10 @@ public class SinglyLinkedList<E>
     return answer;
   }
 
-  // public E merge() {
-    
-  // }
+  public void merge(SinglyLinkedList<E> aa) {
+    tail.setNext(aa.head);
+    tail = null;
+  }
 
   public SinglyLinkedList reverse() {
     SinglyLinkedList<E> temp = new SinglyLinkedList<E>();

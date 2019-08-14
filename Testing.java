@@ -11,8 +11,12 @@ public class Testing
 		}
 		SinglyLinkedList<Integer> r = new SinglyLinkedList<Integer>();
 		r = s.reverse();
+
+		//SinglyLinkedList<Integer> c = new SinglyLinkedList<Integer>();
+		s.merge(r);
+
 		System.out.println(s.toString());
-		System.out.println("Reversed " + r.toString());
+		//System.out.println("Reversed " + r.toString());
 
 		// DoublyLinkedList<Integer> n = new DoublyLinkedList<Integer>();
 		// for(int i=0;i<5;i++)
